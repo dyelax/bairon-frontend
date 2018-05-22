@@ -100,7 +100,7 @@ class App extends Component {
     this.setState({baironLoading: true});
     let then = new Date();
 
-    fetch('http://127.0.0.1:5000/bairon', {  
+    fetch('https://bairon-backend.herokuapp.com/bairon', {  
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -139,7 +139,7 @@ class App extends Component {
       return;
     }
 
-    fetch('http://127.0.0.1:5000/thesaurus/' + word, {  
+    fetch('https://bairon-backend.herokuapp.com/thesaurus/' + word, {  
       method: 'GET',
       headers: {
         'Accept': 'application/json',
@@ -190,7 +190,7 @@ class App extends Component {
       return;
     }
 
-    fetch('http://127.0.0.1:5000/rhyme/' + word, {  
+    fetch('https://bairon-backend.herokuapp.com/rhyme/' + word, {  
       method: 'GET',
       headers: {
         'Accept': 'application/json',
