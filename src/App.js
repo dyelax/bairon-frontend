@@ -18,9 +18,21 @@ class App extends Component {
       bairon: 'Start typing to seed the generator!',
       thesaurus: {},
       rhyme: {},
-      selection: ''
+      selection: '',
+      theme: 'light'
     };
   };
+
+  toggleTheme = () => {
+    console.log('toggle theme')
+    if (this.state.theme === 'light') {
+      document.body.classList.add('dark')
+      this.setState({theme: 'dark'});
+    } else {
+      document.body.classList.remove('dark')
+      this.setState({theme: 'light'});
+    }
+  }
 
   onPoemTitleChange = (newTitle, index) => {
     var poems = this.state.poems;
@@ -39,7 +51,7 @@ class App extends Component {
     var oldSpaces = (oldText.match(/\s/g) || []).length;
     var newSpaces = (newText.match(/\s/g) || []).length;
     if (oldSpaces !== newSpaces) {
-        this.updateBairon();
+        // this.updateBairon();
     }
 
     // this.updateThesaurus();
@@ -47,6 +59,7 @@ class App extends Component {
   };
 
   onSelectionChange = selection => {
+    console.log('selection changing');
     selection = selection.split(' ')[0];
     this.setState({selection: selection});
     if (selection !== '') {
@@ -226,6 +239,7 @@ class App extends Component {
     // console.log(this.state.currentPoem);
     return (
       <div className="App">
+        <button className="toggle-theme" onClick={this.toggleTheme}></button>
         <div className="App-left">
           <Poems 
             poems={this.state.poems}

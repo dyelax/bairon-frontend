@@ -322,6 +322,24 @@ and Daniel Morosan on codepen https://codepen.io/danielmorosan/pen/XmYBVx */
   animation-delay: -0.16s;
 }
 
+button.toggle-theme {
+  position: absolute;
+  top: 24px;
+  right: 12px;
+  border: 0;
+  height: 20px;
+  width: 20px;
+  margin: 0;
+  background: url("../img/moon.svg") no-repeat scroll 0 0 transparent;
+  background-size: contain;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+
 @-webkit-keyframes sk-bouncedelay {
   0%, 80%, 100% { -webkit-transform: scale(0) }
   40% { -webkit-transform: scale(1.0) }

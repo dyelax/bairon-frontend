@@ -1,7 +1,65 @@
 body.dark {
-  background-color: #000;
+  background-color: #292929;
 }
 
-body.dark App-left, body.dark App-right {
-  background-color: #3B3B3B !important;
+body.dark .App-left, body.dark .App-right {
+  background-color: #3B3B3B;
 }
+
+body.dark textarea {
+  background-color: #3B3B3B;
+}
+
+body.dark .react-tabs__tab {
+  background-color: #575757;
+}
+
+body.dark .react-tabs__tab--selected {
+  background-color: #3B3B3B;
+  color: white;
+}
+
+body.dark .react-tabs__tab-list {
+  background-color: #292929;
+}
+
+body.dark h1.title, body.dark .PoemTitle, body.dark .inline-edit, body.dark .Logo-slogan {
+  color: #62B6F0 !important;
+}
+
+body.dark .widget-body, body.dark .widget-search {
+  color: white;
+}
+
+body.dark .widget-button {
+  background-color: #383838;
+}
+
+body.dark .widget-body .gray {
+  color: #BABABA;
+}
+
+body.dark textarea, body.dark input, body.dark {
+  caret-color: white;
+}
+
+body.dark .PoetryInput {
+  color: white;
+}
+
+body.dark .Logo-img {
+  background-color: #3b3b3b;
+}
+
+body.dark button.toggle-theme {
+  background: url("../img/sun.svg") no-repeat scroll 0 0 transparent;
+  background-size: contain;
+}
+
+/*body.dark .PoemTitle {
+  color: #62B6F0;
+}
+
+body.dark .logo-slogan {
+  color: #62B6F0;
+}*/
